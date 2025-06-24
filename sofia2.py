@@ -266,10 +266,19 @@ def main():
     placeholder="Digite sua pergunta sobre a Rosacruz Áurea...",
     height=100
 )
-        
-    ask_button = st.button("Perguntar à Sofia", type="primary")
-   
-    # Processar pergunta
+
+    # Botões lado a lado
+    col_btn1, col_btn2 = st.columns([2, 1])
+    with col_btn1:
+        ask_button = st.button("Perguntar à Sofia", type="primary")
+    with col_btn2:
+        clear_button = st.button("Limpar Chat", type="secondary")        
+
+    # Processar ações dos botões
+    if clear_button:
+        st.session_state.conversation_history = []
+        st.rerun()
+
     if ask_button and user_question.strip():
         with st.spinner("Sofia está pensando..."):
             # Adicionar pergunta ao histórico
@@ -366,9 +375,6 @@ def main():
         for name, url in REPOSITORIOS.items():
             st.markdown(f"• [{name}]({url})")
         
-        if st.button("🗑️ Limpar Conversa"):
-            st.session_state.conversation_history = []
-            st.rerun()
 
 if __name__ == "__main__":
     main()
