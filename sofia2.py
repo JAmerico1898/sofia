@@ -263,7 +263,7 @@ def main():
     
     user_question = st.text_area(
     "Faça sua pergunta:",
-    placeholder="Digite sua pergunta sobre a Rosacruz Áurea...",
+    placeholder="Olá, Pesquisador! Digite sua pergunta sobre a Rosacruz Áurea...",
     height=100
 )
 
