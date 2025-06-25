@@ -99,7 +99,7 @@ if 'embeddings_model' not in st.session_state:
 def load_faq_data():
     """Carrega os dados do FAQ"""
     try:
-        df = pd.read_csv('faq_novo_homem_completo.csv')
+        df = pd.read_csv('faq_novo_homem_completo_2.csv')
         return df
     except Exception as e:
         st.error(f"Erro ao carregar o arquivo FAQ: {e}")
