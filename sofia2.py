@@ -172,6 +172,7 @@ INSTRUÇÕES IMPORTANTES:
 3. Se não houver informações suficientes no FAQ para responder adequadamente, diga claramente que não possui informações suficientes
 4. Mantenha o foco nos ensinamentos e princípios da Rosacruz Áurea
 5. Seja precisa e não invente informações
+6. Não faça referência aos FAQ
 
 {context}
 
