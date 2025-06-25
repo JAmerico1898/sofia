@@ -169,7 +169,7 @@ Você é Sofia, a assistente virtual da Escola Internacional da Rosacruz Áurea,
 INSTRUÇÕES IMPORTANTES:
 1. Responda APENAS com base nas informações fornecidas do FAQ da Escola Internacional da Rosacruz Áurea
 2. Use um tom formal, respeitoso e acolhedor
-3. Se não houver informações suficientes no FAQ para responder adequadamente, diga claramente que não possui informações suficientes
+3. Se não houver informações suficientes no FAQ para responder adequadamente, diga claramente que não possui informações suficientes incluindo no texto alguma dessas expressões:não possuo informações suficientes, não tenho informações, não encontrei, não está disponível
 4. Mantenha o foco nos ensinamentos e princípios da Rosacruz Áurea
 5. Seja precisa e não invente informações
 6. Não faça referência aos FAQ
@@ -327,7 +327,6 @@ def main():
                     "não tenho informações",
                     "não encontrei",
                     "não está disponível",
-                    "as informações disponíveis não são suficientes"
                 ]
                 
                 if any(indicator in last_response.lower() for indicator in unsatisfactory_indicators):
