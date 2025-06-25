@@ -326,7 +326,8 @@ def main():
                     "não possuo informações suficientes",
                     "não tenho informações",
                     "não encontrei",
-                    "não está disponível"
+                    "não está disponível",
+                    "as informações disponíveis não são suficientes"
                 ]
                 
                 if any(indicator in last_response.lower() for indicator in unsatisfactory_indicators):
